@@ -24,15 +24,87 @@ p {
     margin: 10px 0;
 }
 
+/* Utility Classes*/
+.container {
+    margin: auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
 /* Nav bar*/
+
+.topLine {
+    height: 5px;
+    background: #091626;
+}
+
 #navbar 
 {
-    background: #8C6C8A;
-    color: #fff;
+    background: #fff;
+    color: #333;
     overflow: auto;
 }
 
 #navbar a
 {
-    color: #fff;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar .container .current img
+{
+    height: 25px;
+}
+
+#navbar ul {
+    list-style : none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#navbar ul li a:hover {
+    background: #444;
+    color: #f7c08a;
+}
+#showcase .container .showcase-content .gap {
+    height: 100px;
+}
+#showcase .container .showcase-content img {
+    
+    width: 380px;
+    border-radius: 5%;
+    overflow: auto;
+    display: block;
+    margin: auto;
+}
+.introduction {
+    height: 300px;
+}
+
+.midMark {
+    background: #0F222B;
+    height: 350px;
+}
+
+.works {
+    background: #fff;
+    height: 700px;
+}
+
+.footer {
+    background: #7A7158;
+    height: 250px;
 }
