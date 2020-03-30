@@ -54,6 +54,7 @@ p {
     padding-top: 20px;
 }
 
+
 #navbar .container .current img
 {
     height: 25px;
@@ -76,11 +77,15 @@ p {
 
 
 #navbar ul li a:hover {
-    background: #444;
+    background: grey;
     color: #f7c08a;
 }
 #showcase .container .showcase-content .gap {
     height: 100px;
+}
+
+#showcase .container .showcase-content .firstPoint {
+    padding-top: 40px;
 }
 #showcase .container .showcase-content img {
     
