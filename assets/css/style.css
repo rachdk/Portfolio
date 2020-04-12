@@ -104,12 +104,24 @@ body{
     
 }
 @media only screen and (orientation: landscape) {
-    body             { background-color: #aad4ff; }
+
     .portrait_only   { display: none; }
+    .sidebar         { width:40%; }
+    .sidebar2        { display: none; }
+    .main            { margin-left:40%;}
 }
  
 /* Portrait mode */
 @media only screen and (orientation: portrait) {
-    body             { background-color: #aaffd4; }
+  
     .landscape_only  { display: none; }
+    .sidebar         { display: none; }
+    .sidebar2        { margin:0 auto;
+                        align-items: center;
+                        width: 90%;
+                        height: auto; }
+    .main            { margin-left: 0;}
+
+
 }
+
