@@ -6,22 +6,43 @@
 } */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
+@media only screen and (orientation: landscape) {
+   
+    .portrait_only   { display: none; }
+    .sidebar         { width:40%; }
+    .sidebar2        { display: none; }
+    .main            { margin-left:40%;}
+}
+ 
+/* Portrait mode */
+@media only screen and (orientation: portrait) {
+    .landscape_only  { display: none; }
+    .sidebar         { display: none; }
+    .sidebar2        { margin:0 auto;
+                        align-items: center;
+                        width: 90%;
+                        height: auto; }
+    .main            { margin-left: 0;}
+}
+
+/*Font*/
+p h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
 .titleFont {
     font-family: 'Lobster', cursive;
-    font-size: 3vw;
     color: #fff;
     margin-top:0;
     margin-bottom: 7%;
-}
-
-p{
-    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .greeting {
     color: #A6032F;
 }
 
+/*Sidebar image*/
 .bgimg {
     background-position: center;
     background-repeat: no-repeat;
@@ -29,6 +50,7 @@ p{
     background-image: url('/assets/images/profile2.png');
     min-height: 100%;
 }
+
 body{
     background-color: #0E2622;
     margin: 0;
@@ -37,7 +59,6 @@ body{
 }
 .sidebar{
     height:100%;
-    width:60%;
     background-color:#fff;
     position:fixed!important;
     z-index:1;
@@ -45,10 +66,11 @@ body{
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    margin:0;
 }
 .main {
     transition:margin-left .4s;
-    padding:2% 4%!important;
+    padding:4% 4%!important;
     float:right;
 }
 
@@ -81,7 +103,7 @@ body{
     top:50%; */
 }
 .jumbo{
-    font-size:64px!important;
+    font-size:6vw!important;
     margin-bottom: 0;
 }
 .name {
@@ -92,6 +114,7 @@ body{
 
 .nameFont {
     color:#F2B90C;
+    font-size: 8vw;
 }
 
 .shortDescription {
@@ -102,26 +125,5 @@ body{
     word-break:normal;
     padding-right: 7%;
     
-}
-@media only screen and (orientation: landscape) {
-
-    .portrait_only   { display: none; }
-    .sidebar         { width:40%; }
-    .sidebar2        { display: none; }
-    .main            { margin-left:40%;}
-}
- 
-/* Portrait mode */
-@media only screen and (orientation: portrait) {
-  
-    .landscape_only  { display: none; }
-    .sidebar         { display: none; }
-    .sidebar2        { margin:0 auto;
-                        align-items: center;
-                        width: 90%;
-                        height: auto; }
-    .main            { margin-left: 0;}
-
-
 }
 
