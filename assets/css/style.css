@@ -42,6 +42,16 @@ p h1{
     color: #A6032F;
 }
 
+.text-grey {
+    color:#757575!important;
+    font-size: 2.5vw;
+}
+
+.opacity {
+    opacity:0.60;
+    margin: 10px;
+}
+
 /*Sidebar image*/
 .bgimg {
     background-position: center;
@@ -82,6 +92,7 @@ body{
 }
 .wrapper{
     text-align: center;
+    padding-top: 10%;
 }
 .downloadButton{
     /* border:none;
@@ -103,7 +114,7 @@ body{
     top:50%; */
 }
 .jumbo{
-    font-size:6vw!important;
+    font-size:5.5vw!important;
     margin-bottom: 0;
 }
 .name {
@@ -118,12 +129,25 @@ body{
 }
 
 .shortDescription {
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: #fff;
-    padding-left: 8%;
+
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+
     word-wrap: break-word;
     word-break:normal;
-    padding-right: 7%;
-    
+}
+
+.downloadButton {
+    border: 1px solid #C0C5D7; 
+    background-color: #C0C5D7; 
+    color: black;
+}
+
+.section {
+    margin-top:16px!important;
+    margin-bottom:16px!important
 }
 
