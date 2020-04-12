@@ -42,6 +42,11 @@ p h1{
     color: #A6032F;
 }
 
+.moving {
+    font-size: 10px;
+    color: white;
+}
+
 .text-grey {
     color:#757575!important;
     font-size: 2.5vw;
